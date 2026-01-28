@@ -1,0 +1,29 @@
+[package]
+name = "idmap-gateway"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.7", features = ["macros"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tower = { version = "0.4", features = ["util", "timeout", "limit"] }
+tower-http = { version = "0.5", features = ["trace", "cors", "limit"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+redis = { version = "0.24", features = ["tokio-comp"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+reqwest = { version = "0.11", features = ["json"] }
+anyhow = "1.0"
+thiserror = "1.0"
+bs58 = "0.5"
+base64 = "0.21"
+hex = "0.4"
+solana-client = "1.18"
+solana-sdk = "1.18"
+solana-program = "1.18"
+solana-zk-token-sdk = "1.18"
+spl-token-2022 = "3.0"
+spl-associated-token-account = "3.0"
+spl-memo = "4.0"
