@@ -38,3 +38,7 @@ dlp.rs
 
 idmap-media
 idmap
+
+**.log
+*.log
+
